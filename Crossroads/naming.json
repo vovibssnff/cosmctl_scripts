@@ -1,0 +1,5 @@
+{
+    "opts": "-p 10010:10010",
+    "project_name": "Crossroads",
+    "base_name": "api-backend"
+}
