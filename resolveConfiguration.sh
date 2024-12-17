@@ -19,7 +19,7 @@ then
 	touch /opt/cloud/environment
 fi
 
-set | grep $VARIABLE_PREFIX | sed 's|\([A-Za-z]*\)=.*|\1|' | while read varName
+set | grep "$VARIABLE_PREFIX" | sed 's|\([A-Za-z]*\)=.*|\1|' | while read varName
 do
 	echo "Value for $varName is ${!varName}"
 	VALUE=${!varName}
