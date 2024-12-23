@@ -21,7 +21,7 @@ fi
 
 echo "$VARIABLE_PREFIX"
 
-set | grep "$VARIABLE_PREFIX" | sed 's|\([A-Za-z]*\)=.*|\1|' | while read varName
+set | grep "$PROJECT" | sed 's|\([A-Za-z]*\)=.*|\1|' | while read varName
 do
 	echo "Value for $varName is ${!varName}"
 	VALUE=${!varName}
