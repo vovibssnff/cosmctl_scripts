@@ -8,7 +8,7 @@ then
 	ENV_SUFFIX=".local"
 fi
 
-cat /opt/cloud/environment.template$ENV_SUFFIX | envsubst > /opt/cloud/environment.tmp
+cat /opt/cloud/environment.template | envsubst > /opt/cloud/environment.tmp
 
 source /opt/cloud/environment.tmp
 source /opt/cloud/configResolver.sh
